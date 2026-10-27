@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Odilshoh Ortiqovning shaxsiy portfolio sayti. Qobiliyatlar, sport yutuqlari, ta'lim va aloqa ma'lumotlari.">
+    <meta name="author" content="Odilshoh Ortiqov">
+
+    <title>Odilshoh Ortiqov | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-inner">
+
+        <a href="#home" class="logo">
+            Odilshoh <span>Ortiqov</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Menyuni ochish" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav" id="nav">
+            <a href="#home" class="nav-link active" data-i18n="navHome">Bosh sahifa</a>
+            <a href="#about" class="nav-link" data-i18n="navAbout">Men haqimda</a>
+            <a href="#skills" class="nav-link" data-i18n="navSkills">Qobiliyatlarim</a>
+            <a href="#achievements" class="nav-link" data-i18n="navAchievements">Yutuqlarim</a>
+            <a href="#education" class="nav-link" data-i18n="navEducation">Ta’lim</a>
+            <a href="#contact" class="nav-link" data-i18n="navContact">Kontakt</a>
+        </nav>
+
+        <div class="language">
+            <button class="language-button" id="languageButton"
+                    aria-expanded="false" aria-label="Tilni tanlash">
+                <span>◎</span>
+                <span id="currentLanguage">UZ</span>
+                <span class="language-arrow">⌄</span>
+            </button>
+
+            <div class="language-menu" id="languageMenu">
+                <button data-lang="uz"><span>🇺🇿</span> O‘zbekcha</button>
+                <button data-lang="ru"><span>🇷🇺</span> Русский</button>
+                <button data-lang="en"><span>🇬🇧</span> English</button>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<main>
+
+    <!-- BOSH SAHIFA -->
+    <section class="hero" id="home">
+        <div class="hero-inner">
+
+            <div class="hero-text">
+                <p class="hero-label" data-i18n="heroLabel">SALOM, MEN</p>
+
+                <h1>
+                    <span data-i18n="heroName">Odilshoh</span>
+                    <span class="gradient-text" data-i18n="heroLast">man!</span>
+                </h1>
+
+                <p class="hero-description" data-i18n="heroDescription">
+                    O‘z ustimda doimiy ishlaydigan, yangi bilimlarni egallashga
+                    va kelajakda kuchli kadr bo‘lishga intiladigan yigitman.
+                </p>
+
+                <a href="#about" class="primary-button">
+                    <span data-i18n="heroButton">Men haqimda</span>
+                    <span class="button-arrow">→</span>
+                </a>
+            </div>
+
+            <div class="hero-photo">
+                <img src="mee.jpg"
+                     alt="Odilshoh Ortiqov"
+                     class="profile-image">
+
+                <div class="photo-placeholder">
+                    <span>RASМ</span>
+                    <small>images/profile.jpg</small>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MEN HAQIMDA -->
+    <section class="content-section" id="about">
+        <div class="section-inner">
+
+            <div class="section-title">
+                <div class="section-icon">♙</div>
+                <div>
+                    <h2 data-i18n="aboutTitle">Men haqimda</h2>
+                    <p data-i18n="aboutSubtitle">O‘zim haqimda qisqacha ma’lumot.</p>
+                </div>
+            </div>
+
+            <div class="about-grid">
+
+                <article class="info-card">
+                    <div class="card-icon">▦</div>
+                    <div>
+                        <h3 data-i18n="birthTitle">Tug‘ilgan kunim</h3>
+                        <p data-i18n="birthText">
+                            2008-yil 24-noyabr.
+                            Buxoro shahrida tug‘ilganman.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon">🎓</div>
+                    <div>
+                        <h3 data-i18n="studyTitle">Ta’lim</h3>
+                        <p data-i18n="studyText">
+                            Buxoro davlat universiteti,
+                            Iqtisodiyot yo‘nalishi, 1-kurs.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon">▣</div>
+                    <div>
+                        <h3 data-i18n="workTitle">Hozirgi faoliyatim</h3>
+                        <p data-i18n="workText">Deklorant bo‘lib ishlayman.</p>
+                    </div>
+                </article>
+
+                <article class="info-card goal-card">
+                    <div class="card-icon">◎</div>
+                    <div>
+                        <h3 data-i18n="goalTitle">Kelajakdagi maqsadim</h3>
+                        <p data-i18n="goalText">
+                            Malakali va kuchli kadr bo‘lib yetishish.
+                            O‘z ustimda ishlash, yangi bilimlarni egallash
+                            va tajribamni oshirishga intilaman.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- QOBILIYATLARIM -->
+    <section class="content-section" id="skills">
+        <div class="section-inner">
+
+            <div class="section-title">
+                <div class="section-icon">⚙</div>
+                <div>
+                    <h2 data-i18n="skillsTitle">Qobiliyatlarim</h2>
+                    <p data-i18n="skillsSubtitle">Mening asosiy ko‘nikmalarim.</p>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+
+                <article class="skill-card">
+                    <div class="card-icon">&lt;/&gt;</div>
+                    <h3 data-i18n="programmingTitle">Dasturlash</h3>
+                    <p>HTML, CSS, JavaScript, Python.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-icon">✎</div>
+                    <h3 data-i18n="designTitle">Grafik dizayn</h3>
+                    <p>Photoshop, Illustrator, CorelDRAW, AutoCAD.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-icon">▣</div>
+                    <h3 data-i18n="computerTitle">Kompyuter va dasturlar</h3>
+                    <p>Word, Excel, PowerPoint, 1C.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-icon">◎</div>
+                    <h3 data-i18n="languagesTitle">Tillar</h3>
+                    <p data-i18n="languagesText">
+                        O‘zbek, rus, ingliz tillari.
+                    </p>
+                    <small class="learning-language" data-i18n="arabicText">
+                        (Arab tilini ham o‘rganyapman)
+                    </small>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-icon">♜</div>
+                    <h3 data-i18n="sportTitle">Sport</h3>
+                    <p data-i18n="sportText">
+                        Dzyudo bilan shug‘ullanaman, shaxmat va futbolga qiziqaman.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- YUTUQLARIM -->
+    <section class="content-section" id="achievements">
+        <div class="section-inner">
+
+            <div class="section-title">
+                <div class="section-icon">🏆</div>
+                <div>
+                    <h2 data-i18n="achievementsTitle">Yutuqlarim</h2>
+                    <p data-i18n="achievementsSubtitle">
+                        Erishgan natijalarim va yutuqlarim.
+                    </p>
+                </div>
+            </div>
+
+            <div class="achievements-grid">
+
+                <article class="achievement-card">
+                    <div class="achievement-image judo-image">
+                        <img src="images/judo.jpg" alt="Dzyudo musobaqasi">
+                        <span class="image-fallback">🥋</span>
+                    </div>
+                    <div class="achievement-content">
+                        <div class="card-icon">🏆</div>
+                        <div>
+                            <h3 data-i18n="judoTitle">Dzyudo yutuqlari</h3>
+                            <p data-i18n="judoText">
+                                Dzyudo bo‘yicha bir necha karra musobaqalar sovrindori.
+                                Sport ustaligiga nomzodman.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="achievement-card">
+                    <div class="achievement-image courses-image">
+                        <img src="images/courses.jpg" alt="O‘quv kurslari">
+                        <span class="image-fallback">🎓</span>
+                    </div>
+                    <div class="achievement-content">
+                        <div class="card-icon">✦</div>
+                        <div>
+                            <h3 data-i18n="coursesTitle">Tugatilgan kurslar</h3>
+                            <p data-i18n="coursesText">
+                                Ko‘plab kurslarni muvaffaqiyatli tugatganman.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="achievement-card">
+                    <div class="achievement-image growth-image">
+                        <img src="images/growth.jpg" alt="Bilim va rivojlanish">
+                        <span class="image-fallback">↗</span>
+                    </div>
+                    <div class="achievement-content">
+                        <div class="card-icon">↗</div>
+                        <div>
+                            <h3 data-i18n="growthTitle">Doimiy rivojlanish</h3>
+                            <p data-i18n="growthText">
+                                Yangi bilim va tajribalarni egallashda davom etaman.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TA'LIM -->
+    <section class="content-section" id="education">
+        <div class="section-inner">
+
+            <div class="section-title">
+                <div class="section-icon">🎓</div>
+                <div>
+                    <h2 data-i18n="educationTitle">Ta’lim</h2>
+                    <p data-i18n="educationSubtitle">Bilim — kelajak kafolati.</p>
+                </div>
+            </div>
+
+            <article class="education-card">
+
+                <div class="university-image">
+                    <img src="univer.jpg"
+                         alt="Buxoro davlat universiteti">
+                   
+                </div>
+
+                <div class="education-info">
+                    <div class="card-icon">🎓</div>
+                    <div>
+                        <h3 data-i18n="universityTitle">
+                            Buxoro davlat universiteti
+                        </h3>
+                        <p data-i18n="universityDegree">
+                            Iqtisodiyot yo‘nalishi, 1-kurs talabasi.
+                        </p>
+                        <p data-i18n="universityText">
+                            Bilim va ko‘nikmalarimni rivojlantirib,
+                            kelajakdagi kasbiy faoliyatimga tayyorlanmoqdaman.
+                        </p>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="content-section contact-section" id="contact">
+        <div class="section-inner">
+
+            <div class="section-title">
+                <div class="section-icon">☎</div>
+                <div>
+                    <h2 data-i18n="contactTitle">Kontakt</h2>
+                    <p data-i18n="contactSubtitle">Men bilan bog‘laning.</p>
+                </div>
+            </div>
+
+            <div class="contact-grid">
+
+                <article class="contact-card">
+                    <div class="card-icon telegram-icon">➤</div>
+                    <div class="contact-info">
+                        <h3>Telegram</h3>
+                        <p>@ortiqov_24</p>
+                        <a href="https://t.me/ortiqov_24"
+                           target="_blank" rel="noopener noreferrer"
+                           class="primary-button contact-button">
+                            <span data-i18n="telegramButton">Telegramda yozish</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="contact-card">
+                    <div class="card-icon">☎</div>
+                    <div class="contact-info">
+                        <h3 data-i18n="phoneTitle">Telefon</h3>
+                        <p>+998 91 407 24 11</p>
+                        <a href="tel:+998914072411"
+                           class="primary-button contact-button">
+                            <span data-i18n="callButton">Qo‘ng‘iroq qilish</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Imzo rasmi; qo‘shimcha matn yo‘q -->
+                <div class="signature-card">
+                    <img src="imzo.jpg"
+                         alt="Shaxsiy imzo"
+                         class="signature-image">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <a href="#home" class="logo">Odilshoh <span>Ortiqov</span></a>
+
+    <p data-i18n="footerText">
+        © 2026 Odilshoh Ortiqov. Barcha huquqlar himoyalangan.
+    </p>
+
+    <a href="https://t.me/ortiqov_24"
+       target="_blank" rel="noopener noreferrer"
+       class="footer-telegram">➤</a>
+</footer>
+
+</body>
+</html>
